@@ -491,14 +491,21 @@
             .dark .bg-gradient-to-r.from-green-50,
             .dark .bg-gradient-to-r.from-gray-50,
             .dark .bg-gradient-to-r.from-blue-50 {
-                background: #f9f9f9 !important;
-                border: 1px solid #ddd !important;
+                background: white !important;
+                border: none !important;
             }
 
             /* Step numbers */
             .step-number {
-                background: #000 !important;
-                color: #fff !important;
+                background: none !important;
+                color: #000 !important;
+                border: 1px solid gray;
+            }
+
+            .cookware-badge, .ingredient-badge, .tag, .metadata-pill {
+                background: none !important;
+                color: #000 !important;
+                box-shadow: none;
             }
 
             /* Images */
@@ -532,7 +539,7 @@
             /* Recipe header */
             h1 {
                 color: #000 !important;
-                font-size: 1.5rem !important;
+                font-size: 2.5rem !important;
                 margin-bottom: 0 !important;
             }
 
@@ -566,8 +573,12 @@
             }
 
             .flex-1 {
-                width: 100% !important;
                 flex: none !important;
+            }
+
+            .space-y-3, .py-2 {
+                margin: 0 !important;
+                padding: 2px !important;
             }
 
             #shopping-list-results {
